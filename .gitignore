@@ -1,0 +1,22 @@
+.DS_Store
+node_modules/
+/dist/
+tests/cypress/screenshots/*
+tests/cypress/videos/*
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+firebase-admin-keys.json
+
+config/test.env
+config/production.env
+
+# Editor directories and files
+.idea
+.vscode
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.env
+proyecto.zip
