@@ -15,12 +15,12 @@ $ npm run dev
 ### Notas
 
 Instalar cypress (test runner) y pushstate-server (servidor estatico de archivos):
-```
-npm install cypress -D 
-pm install pushstate-server -D
+``` bash
+$ npm install cypress -D 
+$ pm install pushstate-server -D
 ```
 Crear tareas en package.json
-```
+```json
 "cypress:open": "cypress open --project ./test", -> Abrir consola de cypress
 "build": "cross-env NODE_ENV=production node build/build.js", -> construir paquete para prod
 "build:test": "cross-env NODE_ENV=test node build/build.js", -> construir paquete para dev
@@ -34,14 +34,19 @@ Definir tareas que corran en paralelo con "run-p" de la dependencia 'npm-run-all
 npm install npm-run-all -D
 ```
 package.json:
-```
+```json
 "test:dev": "npm run build:test && run-p --race test:server cypress:open"
+```
+
+Ejecutar tareas:
+```bash
+$ npm run test:dev
 ```
 
 Omitir errores en editor:
 
 Adicionar en package.json
-```
+```json
   "standard": {
     "globals": [
         "describe",
@@ -49,6 +54,13 @@ Adicionar en package.json
         "cy"
     ]
   }
+```
+
+Mocking
+```js
+cy.stub()
+cy.spy()
+cy.clock()
 ```
 
 ### Licencia

@@ -6,10 +6,11 @@ tests/cypress/videos/*
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
-firebase-admin-keys.json
 
 config/test.env
 config/production.env
+config/firebase-admin-keys.json
+test/cypress/screenshots/
 
 # Editor directories and files
 .idea
