@@ -18,7 +18,7 @@
     "test:clean": "cd build && node clean-test-db.js"
   },
   "dependencies": {
-    "firebase": "^4.13.1",
+    "firebase": "^10.9.0",
     "moment": "^2.22.1",
     "vue": "^2.5.2",
     "vue-router": "^3.0.1",
